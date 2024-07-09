@@ -10,7 +10,7 @@ const page = () => {
     const email = formData.get("email");
     const password = formData.get("password");
 
-    await fetch("http://localhost:3000/api/user/create", {
+    await fetch("https://little-fixed.vercel.app/api/user/create", {
       method: "POST",
       headers: {
         "Content-Type": "Application/json",
