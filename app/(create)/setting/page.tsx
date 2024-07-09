@@ -9,7 +9,7 @@ const page = async () => {
   const session = await getServerSession(options);
 
   const id = session?.user?.id;
-  const url = "http://localhost:3000/api/user/create/user";
+  const url = "https://little-fixed.vercel.app/api/user/create/user";
 
   const user = await fetch(`${url}/${id}`, {
     method: "GET",

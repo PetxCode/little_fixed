@@ -16,7 +16,7 @@ export const options = {
       },
       async authorize(credentials, req) {
         const res = await fetch(
-          "http://localhost:3000/api/user/create/signin",
+          "https://little-fixed.vercel.app/api/user/create/signin",
           {
             method: "POST",
             body: JSON.stringify(credentials),

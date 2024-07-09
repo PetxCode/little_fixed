@@ -8,7 +8,7 @@ const page = async () => {
   const session = await getServerSession(options);
 
   const id = session?.user?.id;
-  const url = "http://localhost:3000/api/user/create/user";
+  const url = "https://little-fixed.vercel.app/api/user/create/user";
   const res = await fetch(`${url}/${id}/pending`, {
     method: "GET",
     cache: "no-cache",
